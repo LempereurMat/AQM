@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 08, 2018 at 03:02 PM
+-- Generation Time: Jun 08, 2018 at 03:47 PM
 -- Server version: 5.7.22-0ubuntu0.16.04.1
 -- PHP Version: 7.0.30-0ubuntu0.16.04.1
 
@@ -517,6 +517,13 @@ CREATE TABLE `hopital` (
   `CP` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `hopital`
+--
+
+INSERT INTO `hopital` (`ID`, `Nom`, `Adresse`, `Ville`, `CP`) VALUES
+(1, 'CHRU de Brest', '2 avenue foch', 'Brest', 29200);
+
 -- --------------------------------------------------------
 
 --
@@ -919,7 +926,7 @@ ALTER TABLE `historique_modifications`
 -- AUTO_INCREMENT for table `hopital`
 --
 ALTER TABLE `hopital`
-  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `localisationtraitement`
 --
