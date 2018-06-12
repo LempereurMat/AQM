@@ -10,31 +10,31 @@
 4. Télécharger aqm_chru.sql (dossier SQL)
 4. Download aqm_chru.sql (folder SQL)
 
-5. Importer aqm_chru.sql dans phpmyadmin 
-5. Import aqm_chru.sql using phpmyadmin 
+5. Créer une base de données intitulée 'aqm_chru' dans phpmyadmin
+5. Create a database called 'aqm_chru' using phpmyadmin
 
-4. Télécharger aqm_chru.sql 
-4. Download aqm_chru.sql
+6. Importer aqm_chru.sql dans phpmyadmin 
+6. Import aqm_chru.sql using phpmyadmin 
 
-5. Importer aqm_chru.sql dans phpmyadmin
-5. Import aqm_chru.sql using phpmyadmin
+7. Modifier la ligne 'error_reporting = E_ALL' par 'error_reporting = E_ALL & ~E_NOTICE' dans php.ini
+7. Modify the ligne 'error_reporting = E_ALL' by 'error_reporting = E_ALL & ~E_NOTICE' in php.ini
 
-6. localhost/AQM/login.php 
-6. localhost/AQM/login.php 
+8. localhost/AQM/login.php 
+8. localhost/AQM/login.php 
 
-7. login : admin ; password : admin pour être administrateur de la base de données 
-7. login : admin ; password : admin to be the administrator of the database 
+9. login : admin ; password : admin pour être administrateur de la base de données 
+9. login : admin ; password : admin to be the administrator of the database 
 
-8. 4 utilisateurs (administrateur peut modifier et visualiser les données de tous les CHU, Manager peut modifier et visualiser les données de son CHU, Membre (médecin, chirurgien, ...) peut visualiser les données de son CHU, Passive Member ne peut visualiser les données mais besoin de son identité dans la prescription d'un acte médical).
-8. 4 users (administrator can modify and modify the data from all the gait labs, Manager can modify and view data the data of its gait lab, Membre (physiatrist, surgeon, ...) can view the data from its gait lab, Passive Member can not view the data but need its identity in the prescription of a medical act).
+10. 4 utilisateurs (administrateur peut modifier et visualiser les données de tous les CHU, Manager peut modifier et visualiser les données de son CHU, Membre (médecin, chirurgien, ...) peut visualiser les données de son CHU, Passive Member ne peut visualiser les données mais besoin de son identité dans la prescription d'un acte médical).
+10. 4 users (administrator can modify and modify the data from all the gait labs, Manager can modify and view data the data of its gait lab, Membre (physiatrist, surgeon, ...) can view the data from its gait lab, Passive Member can not view the data but need its identity in the prescription of a medical act).
 
-9. Menu Admin -> Hopitaux pour ajouter un ou plusieurs CHU
+11. Menu Admin -> Hopitaux pour ajouter un ou plusieurs CHU
 
-10. Menu Admin -> Utilisateurs pour ajouter un ou plusieurs utilisateurs
+12. Menu Admin -> Utilisateurs pour ajouter un ou plusieurs utilisateurs
 
 
 
-11. Pathologie des enfants __________ Non renseigné
+13. Pathologie des enfants __________ Non renseigné
 							|_______ Sain
 							|_______ Autre
 							|_______ Hémiplégie
@@ -52,7 +52,7 @@
 							|_______ Orthopédie
 										|_______ Gauche / Droit / Bilatéral
 										
-12. Pathologie des adultes __________ Non renseigné
+14. Pathologie des adultes __________ Non renseigné
 							|_______ Sain
 							|_______ Autre
 							|_______ Hémiplégie
