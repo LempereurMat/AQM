@@ -247,7 +247,7 @@
 
         <div class="centerDiv" style="top:3600px;width:60%;">
             <h3 style="color:white;">Date de naissance</h3>
-            <input type="date" class="inputText" id="date_naissance" name="date_naissance" value="<?php echo $date_naissance; ?>" placeholder="JJ/MM/AAAA" onkeyup="if(event.keyCode==13)scrollButton(4200);"/><br/><br/>
+            <input type="text" class="inputText" id="date_naissance" name="date_naissance" value="<?php echo $date_naissance; ?>" placeholder="JJ/MM/AAAA" onkeyup="if(event.keyCode==13)scrollButton(4200);"/><br/><br/>
             <div class="twoButtonsDiv">
                 <div style="float:left;" class="buttonClassic" onclick="scrollButton(2800)"><h4><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></h4><h5 style="position:relative;top:3px;">Retour</h5></div>
                 <div style="float:right;" class="buttonClassic" onclick="scrollButton(4250)"><h4><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h4><h5 style="position:relative;top:3px;">Valider</h5></div>
