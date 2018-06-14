@@ -59,7 +59,7 @@
         
         message("Patient crée", "green");
         echo '<form id="formNewChildPatient" method="post" action="patient.php">'
-        .'<input type="hidden" name="id" value="'.$nPatient.'"/>'
+        .'<input type="hidden" name="id" value="'.$id.'"/>'
         .'</form>'
         .'<script>'
         .'document.getElementById("formNewChildPatient").submit();'

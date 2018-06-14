@@ -47,14 +47,14 @@
         $row = $req->fetch();
         $id = $row["ID_patient"];
         
-        //Partie pathologie
-        $req = $db->prepare("INSERT INTO pathologies(patients_ID_patient,patho,cote,type_patho,origine,commentaire) VALUES (?,?,?,?,?,?);");
         
-        $req->execute(array($id,$pathologie,$pathologieCote,$pathologieDetails,'',$pathologieCommentaire));
+        //Partie pathologie
+        $SQL = "INSERT INTO pathologies (patients_ID_patient,patho,cote,type_patho,origine,etiologie,cause_etiologie,commentaire) VALUES ('" .$id."','".$pathologie."','".$pathologieCote."','".$pathologieDetails."','' ,0,0,'".$pathologieCommentaire."')";
+		$db->exec($SQL);
         
         message("Patient créé", "green");
         echo '<form id="formNewAdultPatient" method="post" action="patient.php">'
-        .'<input type="hidden" name="id" value="'.$nPatient.'"/>'
+        .'<input type="hidden" name="id" value="'.$id.'"/>'
         .'</form>'
         .'<script>'
         .'document.getElementById("formNewAdultPatient").submit();'
